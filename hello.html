@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <title>Hello 🐱</title>
+    <style>
+        :root {
+            --pink: #ffd6e8;
+            --pink-dark: #ff8fb1;
+            --purple: #d6b3ff;
+            --cream: #fff8f0;
+            --text: #5a4a4a;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Comic Sans MS', 'Trebuchet MS', sans-serif;
+            background: linear-gradient(180deg, var(--pink) 0%, var(--cream) 100%);
+            color: var(--text);
+            min-height: 100vh;
+        }
+
+        /* --- Navigation bar --- */
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5rem;
+            background: var(--pink-dark);
+            padding: 0.9rem 1rem;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.4rem 0.9rem;
+            border-radius: 20px;
+            transition: background 0.2s ease, transform 0.2s ease;
+        }
+
+        nav a:hover {
+            background: var(--purple);
+            transform: translateY(-2px);
+        }
+
+        main {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 2rem 1.2rem 4rem;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .subtitle {
+            color: var(--pink-dark);
+            font-weight: bold;
+        }
+
+        .kitten-row {
+            font-size: 2.5rem;
+            margin: 1.5rem 0;
+            letter-spacing: 0.5rem;
+        }
+
+        .card {
+            background: white;
+            border: 3px dashed var(--pink-dark);
+            border-radius: 20px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            box-shadow: 0 4px 12px rgba(255, 143, 177, 0.3);
+        }
+
+        .card h2 {
+            margin-top: 0;
+            color: var(--pink-dark);
+        }
+
+        /* --- Facts about me --- */
+        #facts ul {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+            display: inline-block;
+        }
+
+        #facts li {
+            margin: 0.6rem 0;
+            font-size: 1.05rem;
+        }
+
+        #facts li::before {
+            content: "🐾 ";
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            font-size: 1.5rem;
+            color: var(--pink-dark);
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#home">🏠 Home</a>
+        <a href="#facts">😺 Facts About Me</a>
+    </nav>
+
+    <main>
+        <section id="home">
+            <h1>Hello! 👋</h1>
+            <p class="subtitle">Welcome to my page!</p>
+            <div class="kitten-row">🐱 😻 🐈 😸 🐈‍⬛</div>
+        </section>
+
+        <section id="facts" class="card">
+            <h2>Facts About Me</h2>
+            <ul>
+                <li>I love learning new things!</li>
+                <li>My younger brother is my best friend!</li>
+                <li>I enjoy reading books!</li>
+            </ul>
+        </section>
+
+    </main>
+
+    </footer>
+
+</body>
+</html>
